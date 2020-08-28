@@ -1,0 +1,52 @@
+.cars-container {
+  .h3 {
+    margin: 55px 97px;
+    color: $text;
+    font: italic normal normal 34px/46px FoundryMonoline-ExBdIta;
+    text-transform: uppercase;
+  }
+  .gallery {
+    display: flex;
+    align-items: center;
+    &-col {
+      display: flex;
+      flex-direction: column;
+      margin-left: 97px;
+      img {
+        border: 2px solid $subColor;
+        margin: 5px;
+      }
+    }
+    .cars {
+      margin-left: 35px;
+      width: 90%;
+    }
+  }
+  .info {
+    color: $text;
+    margin: 25px 97px;
+    // text-align: center;
+    font: normal normal normal 18px/24px FoundryMonoline-Regular;
+  }
+}
+// reposive
+
+@media (min-width: 200px) and (max-width: 800px) {
+  .h3 {
+    text-align: center;
+    font: italic normal normal 24px/30px FoundryMonoline-ExBdIta !important;
+
+    margin: 0 auto !important;
+  }
+  .gallery-col {
+    margin-left: 0 !important;
+    display: none !important;
+  }
+  .cars {
+    margin: 40px auto !important;
+  }
+  .info {
+    text-align: center;
+    margin: 0 auto !important;
+  }
+}

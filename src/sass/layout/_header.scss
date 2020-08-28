@@ -1,0 +1,52 @@
+header {
+  @extend %d-center;
+  position: relative;
+  height: 5vh;
+  width: 100%;
+  background-color: $subColor;
+  a {
+    font: normal normal medium 12px/16px FoundryMonoline;
+    color: $smalTxt;
+  }
+  .fa {
+    color: $icons;
+  }
+  .portal {
+    @extend %d-around;
+    position: absolute;
+    left: 114px;
+    width: 190px;
+  }
+  ul {
+    @extend %d-around;
+    position: absolute;
+    right: 114px;
+    width: 30%;
+    li {
+      @extend %d-align-center;
+      a {
+        margin: 0 12px;
+      }
+    }
+  }
+  .mobile {
+    display: none;
+  }
+}
+// Responsive
+
+@media (min-width: 200px) and (max-width: 800px) {
+  header {
+    .portal,
+    ul {
+      display: none;
+    }
+  }
+  .mobile {
+    position: relative;
+    left: 0.1px;
+    display: flex !important;
+    justify-content: space-around;
+    width: 100%;
+  }
+}

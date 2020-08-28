@@ -1,0 +1,22 @@
+%d-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%d-align-center {
+  display: flex;
+  align-items: center;
+}
+%d-around {
+  display: flex;
+  justify-content: space-around;
+}
+%d-evenly {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@mixin widthAndheight($w, $h) {
+  width: $w;
+  height: $h;
+}
