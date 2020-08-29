@@ -9,12 +9,14 @@
   "author": "Weverton diogo procópio da cruz",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
-    "node-sass": "^4.14.1",
-    "pump": "^3.0.0"
+    "node-sass": "^4.14.1"
   },
   "dependencies": {}
 }

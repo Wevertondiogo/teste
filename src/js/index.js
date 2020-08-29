@@ -17,3 +17,11 @@ $(".carousel-mobile").slick({
   nextArrow: '<div class="next"><i class="fa fa-angle-right fa-2x"></i></div>',
   prevArrow: '<div class="prev"><i class="fa fa-angle-left fa-2x"></i></div>',
 });
+
+const q = (q) => document.querySelector(q);
+
+const form = q(".form-group");
+
+// const formMovie = () => {
+//   form.offsetTop <= pageYOffset ? (form.style.position = "fixed") : "";
+// };

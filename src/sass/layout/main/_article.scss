@@ -9,8 +9,8 @@ article {
   .carousel-mobile {
     position: relative;
     margin: 30px 97px;
+    width: 62vw;
     height: 52vh;
-
     .next,
     .prev {
       @extend %d-center;
@@ -33,11 +33,11 @@ article {
     }
     .next {
       right: 25px;
-      top: 30%;
+      top: 20%;
     }
     .prev {
       left: 25px;
-      top: 30%;
+      top: 20%;
     }
 
     .item {
@@ -50,11 +50,11 @@ article {
       }
       .carousel-body {
         .carousel-title {
-          font: italic bold normal 25px/32px FoundryMonoline-ExBdIta ☞;
+          font: italic normal normal 25px/32px "Poppins";
           color: #000;
         }
         .carousel-text {
-          font: normal normal 300 14px/19px FoundryMonoline ☞;
+          font: normal normal 300 14px/19px "Poppins";
         }
       }
     }
@@ -65,10 +65,10 @@ article {
     .h3 {
       text-transform: uppercase;
       color: $text;
-      font: italic normal bold 34px/46px FoundryMonoline-ExBdIta;
+      font: italic normal normal 34px/46px "Poppins";
     }
     .h5 {
-      font: normal normal normal 18px/24px FoundryMonoline-Regular;
+      font: normal normal normal 18px/24px "Poppins";
       color: $text;
     }
   }
@@ -81,7 +81,7 @@ article {
 
         &-text {
           text-align: center;
-          font: normal normal 300 14px/19px FoundryMonoline;
+          font: normal normal 300 14px/19px "Poppins";
           color: #707070;
         }
         .btn {
@@ -108,12 +108,6 @@ article {
   .carousel-mobile {
     height: 35vh !important;
   }
-  .next {
-    top: 25% !important;
-  }
-  .prev {
-    top: 25% !important;
-  }
 }
 // @media (min-width: 1000px) and (max-width: 1700px) {
 //   .next {
@@ -129,53 +123,53 @@ article {
       height: 270px;
     }
   }
-
-  @media (min-width: 200px) and (max-width: 800px) {
-    .carousel {
-      display: none;
+}
+@media (min-width: 200px) and (max-width: 800px) {
+  .carousel {
+    display: none;
+  }
+  .carousel-mobile {
+    margin: 0 auto !important;
+    display: flex !important;
+    width: 100vw !important;
+    height: 58vh !important;
+    .item {
+      .carousel-body {
+        text-align: center;
+        .carousel-title {
+          font: italic normal bold 20px/36px "Poppins" !important;
+        }
+        .carousel-text {
+          font: normal normal normal 14px/24px "Poppins" !important;
+        }
+      }
     }
-    .carousel-mobile {
-      margin: 0 auto !important;
-      display: flex !important;
-      width: 100vw !important;
-      .item {
-        .carousel-body {
+  }
+  .texts {
+    margin: 40px auto !important;
+    text-align: center;
+    .h3 {
+      font: italic normal bold 28px/32px "Poppins" !important;
+    }
+    .h5 {
+      font: normal normal normal 20px/34px "Poppins" !important;
+    }
+  }
+  .container-cards {
+    margin: 0 auto !important;
+    width: 90vw !important;
+    .col {
+      margin: 0 auto;
+      &:nth-child(2),
+      &:nth-child(3) {
+        display: none;
+      }
+      .card {
+        border: 1px solid #d5d5d5;
+        &-text {
           text-align: center;
-          .carousel-title {
-            font: italic normal bold 20px/36px FoundryMonoline-ExBdIta !important;
-          }
-          .carousel-text {
-            font: normal normal normal 14px/24px FoundryMonoline-Regular !important;
-          }
-        }
-      }
-    }
-    .texts {
-      margin: 40px auto !important;
-      text-align: center;
-      .h3 {
-        font: italic normal bold 28px/32px FoundryMonoline-ExBdIta !important;
-      }
-      .h5 {
-        font: normal normal normal 20px/34px FoundryMonoline-Regular !important;
-      }
-    }
-    .container-cards {
-      margin: 0 auto !important;
-      width: 90vw !important;
-      .col {
-        margin: 0 auto;
-        &:nth-child(2),
-        &:nth-child(3) {
-          display: none;
-        }
-        .card {
-          border: 1px solid #d5d5d5;
-          &-text {
-            text-align: center;
-            font: normal normal 300 14px/19px FoundryMonoline;
-            color: #707070;
-          }
+          font: normal normal 300 14px/19px "Poppins";
+          color: #707070;
         }
       }
     }

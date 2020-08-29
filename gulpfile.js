@@ -2,7 +2,7 @@ const gulp = require("gulp");
 const sass = require("gulp-sass");
 const html = require("gulp-htmlmin");
 const uglify = require("gulp-uglify");
-const pump = require("pump");
+const babel = require("gulp-babel");
 sass.compiler = require("node-sass");
 
 gulp.task("default", watch);
@@ -22,12 +22,20 @@ function htmlMin() {
     .pipe(gulp.dest("dist"));
 }
 
-function jsMin(call) {
-  pump([gulp.src("src/**/*.js"), uglify(), gulp.dest("dist")], call);
+function compilerJs() {
+  return gulp
+    .src("src/js/**/*.js")
+    .pipe(
+      babel({
+        presets: ["@babel/preset-env"],
+      })
+    )
+    .pipe(uglify())
+    .pipe(gulp.dest("dist/js"));
 }
 
 function watch() {
   gulp.watch("src/sass/**/*.scss", compilerSass);
   gulp.watch("src/index.html", htmlMin);
-  gulp.watch("src/**/*.js", jsMin);
+  gulp.watch("src/js/**/*.js", compilerJs);
 }

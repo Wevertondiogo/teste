@@ -6,6 +6,12 @@
   .group {
     @extend %d-evenly;
     width: 700px;
+    &.rel {
+      position: relative;
+    }
+    &.fixed {
+      position: fixed;
+    }
     .concessionaria,
     .atendimendo {
       @extend %d-center;
@@ -18,7 +24,7 @@
       }
       p {
         padding-left: 14px;
-        font: normal normal medium 14px/19px FoundryMonoline;
+        font: normal normal medium 14px/19px "Poppins";
         span {
           color: $red;
           text-transform: uppercase;
@@ -28,17 +34,17 @@
     .atendimendo {
       flex-direction: column;
       .h5 {
-        font: italic normal normal 16px/21px FoundryMonoline-MedIta;
+        font: italic normal normal 16px/21px "Poppins";
         text-transform: uppercase;
       }
       .h2 {
-        font: italic normal normal 32px/20px FoundryMonoline-ExBdIta;
+        font: italic normal normal 30px/25px "Poppins";
         color: $red;
       }
     }
   }
   .h3 {
-    font: italic bold normal 24px/32px FoundryMonoline-ExBdIta;
+    font: italic normal normal 24px/32px "Poppins";
     text-transform: uppercase;
     color: $text;
   }
@@ -79,7 +85,7 @@
         }
         p {
           padding-left: 14px;
-          font: normal normal medium 14px/19px FoundryMonoline !important;
+          font: normal normal medium 14px/19px "Poppins" !important;
           span {
             color: $red;
             text-transform: uppercase;
@@ -90,17 +96,17 @@
       .atendimendo {
         flex-direction: column;
         .h5 {
-          font: italic normal normal 16px/21px FoundryMonoline-MedIta !important;
+          font: italic normal normal 16px/21px "Poppins" !important;
           text-transform: uppercase;
         }
         .h2 {
-          font: italic normal normal 26px/14px FoundryMonoline-ExBdIta !important;
+          font: italic normal normal 26px/14px "Poppins" !important;
           color: $red;
         }
       }
     }
     .h3 {
-      font: italic bold normal 18px/24px FoundryMonoline-ExBdIta !important;
+      font: italic normal normal 18px/24px "Poppins" !important;
     }
   }
 }

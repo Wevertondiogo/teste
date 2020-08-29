@@ -18,17 +18,20 @@
     display: none;
   }
   .content-form {
-    display: flex;
-    justify-content: flex-end;
+    position: relative;
     .form-group {
       display: flex;
       flex-direction: column;
-      margin: 7% 7%;
       box-shadow: 0px 0px 5px #00000029;
       border-radius: 4px;
       background: $form 0% 0% no-repeat padding-box;
       width: 310px;
-      padding: 30px 5px;
+      padding: 35px 5px;
+      position: fixed;
+      top: 32%;
+      right: 8%;
+      z-index: 999;
+
       .form-group-header {
         @extend %d-evenly;
         @include widthAndheight(65%, 60px);
@@ -38,7 +41,7 @@
           @include widthAndheight(45px, 45px);
         }
         .title {
-          font: normal normal medium 14px/19px FoundryMonoline;
+          font: normal normal medium 14px/19px "Poppins";
           color: $text;
           span {
             text-transform: uppercase;
@@ -120,16 +123,23 @@
 
 // Responsive
 
+@media (min-width: 1700px) and (max-width: 1800px) {
+  .form-group {
+    top: 20% !important;
+  }
+}
+
 @media (max-width: 1300px) {
   .form-group {
-    margin: 2% 4% !important;
+    top: 20% !important;
   }
 }
 
 @media (min-width: 1100px) and (max-width: 1200px) {
   .form-group {
-    margin: 3% 6% !important;
-    width: 240px !important;
+    top: 22% !important;
+    right: 3% !important;
+    width: 280px !important;
     padding: 0 5px !important;
     .form-group-header {
       width: 85% !important;
@@ -140,11 +150,12 @@
     }
   }
 }
-@media (min-width: 800px) and (max-width: 1000px) {
+@media (min-width: 900px) and (max-width: 1000px) {
   .form-group {
-    margin: 1% 6% !important;
-    width: 200px !important;
-    padding: 0 5px !important;
+    top: 25% !important;
+    right: 4% !important;
+    width: 240px !important;
+    padding: 0 8px !important;
     .btn {
       height: 30px;
       font: normal normal bold 10px/14px Roboto !important;
@@ -181,14 +192,13 @@
     }
   }
 }
-// responsive
 
 @media (min-width: 200px) and (max-width: 800px) {
   .content {
     background-image: url(none);
     height: auto !important;
     background-position-x: 10px;
-    height: 100vw;
+    // height: 100vw;
     .img-mobile {
       display: flex !important;
     }
@@ -199,15 +209,28 @@
     }
     .content-form {
       margin-top: 30px;
-      position: relative;
-      left: 15px;
-      justify-content: center !important;
-      width: 100vw;
+
+      .btn {
+        margin-left: 8.5% !important;
+      }
       .form-group {
-        width: 100% !important;
+        position: relative !important;
+        width: 105vw !important;
         .form-group-header {
-          // width: 55% !important;
+          width: 45% !important;
           margin-bottom: 5px;
+          margin-left: 28px;
+        }
+        .form-control {
+          margin-left: 4% !important;
+        }
+        .groupInputIcon {
+          .fa {
+            left: 4% !important;
+          }
+        }
+        .input-group {
+          margin-left: 8.5% !important;
         }
       }
     }
