@@ -21,7 +21,3 @@ $(".carousel-mobile").slick({
 const q = (q) => document.querySelector(q);
 
 const form = q(".form-group");
-
-// const formMovie = () => {
-//   form.offsetTop <= pageYOffset ? (form.style.position = "fixed") : "";
-// };

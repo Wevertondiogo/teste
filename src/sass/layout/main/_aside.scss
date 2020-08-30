@@ -1,21 +1,18 @@
-// body {
-//   overflow: hidden;
-// }
 aside {
   background-image: url("../img/Retângulo 11@2x.png");
   background-size: cover;
   display: flex;
   align-items: flex-end;
-  height: 56vh;
+  height: 58vh;
   .info {
     margin: 25px 97px;
     .h2 {
-      font: italic normal normal 31px/40px "Poppins";
+      font: italic normal normal 34px/46px "Poppins";
       color: $mainColor;
       text-transform: uppercase;
     }
     p {
-      font: normal normal normal 20px/24px "Poppins";
+      font: normal normal normal 18px/24px "Poppins";
       color: $mainColor;
     }
   }
