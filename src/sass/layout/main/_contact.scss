@@ -74,13 +74,13 @@
     }
   }
 }
-@media (min-width: 1000px) and(max-width: 1300px) {
+@media (min-width: 1000px) and(max-width: 1400px) {
   .group {
     width: 40% !important;
     .concessionaria,
     .atendimendo {
       width: 42% !important;
-      height: 70 !important;
+      height: 70px !important;
       p {
         font-size: 12px !important;
       }
@@ -137,7 +137,7 @@
       }
     }
     .h3 {
-      font: italic normal normal 15px/10px "Poppins" !important;
+      font: italic normal normal 15px/12px "Poppins" !important;
     }
   }
 }
