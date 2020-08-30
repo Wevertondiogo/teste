@@ -5,7 +5,7 @@
   height: 40vh;
   .group {
     @extend %d-evenly;
-    width: 700px;
+    width: 48%;
     &.rel {
       position: relative;
     }
@@ -50,6 +50,54 @@
   }
 }
 // reposive
+@media (max-width: 900px) {
+  .group {
+    width: 420px !important;
+    .concessionaria,
+    .atendimendo {
+      width: 200px !important;
+      height: 70 !important;
+      p {
+        font-size: 12px !important;
+      }
+      span {
+        font-size: 14px !important;
+      }
+    }
+    .atendimendo {
+      .h5 {
+        font-size: 13px !important;
+      }
+      .h2 {
+        font: italic normal normal 16px/12px "Poppins";
+      }
+    }
+  }
+}
+@media (min-width: 1000px) and(max-width: 1300px) {
+  .group {
+    width: 40% !important;
+    .concessionaria,
+    .atendimendo {
+      width: 42% !important;
+      height: 70 !important;
+      p {
+        font-size: 12px !important;
+      }
+      span {
+        font-size: 14px !important;
+      }
+    }
+    .atendimendo {
+      .h5 {
+        font-size: 12px !important;
+      }
+      .h2 {
+        font: italic normal normal 16px/5px "Poppins" !important;
+      }
+    }
+  }
+}
 
 @media (min-width: 200px) and (max-width: 800px) {
   .container-fluid {
@@ -79,17 +127,17 @@
       .atendimendo {
         flex-direction: column;
         .h5 {
-          font: italic normal normal 16px/21px "Poppins" !important;
+          font: italic normal normal 12px/21px "Poppins" !important;
           text-transform: uppercase;
         }
         .h2 {
-          font: italic normal normal 26px/14px "Poppins" !important;
+          font: italic normal normal 16px/14px "Poppins" !important;
           color: $red;
         }
       }
     }
     .h3 {
-      font: italic normal normal 18px/24px "Poppins" !important;
+      font: italic normal normal 15px/10px "Poppins" !important;
     }
   }
 }

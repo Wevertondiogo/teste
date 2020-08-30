@@ -23,14 +23,35 @@
     }
   }
   .info {
-    width: 870px;
+    width: 60%;
     color: $text;
     margin: 25px 97px;
-    // text-align: center;
     font: normal normal normal 18px/24px "Poppins";
   }
 }
 // reposive
+
+@media (max-width: 900px) {
+  .h3 {
+    font-size: 22px !important;
+  }
+  .info {
+    font-size: 14px !important;
+  }
+  .cars {
+    width: 40%;
+  }
+  .gallery-col {
+    img {
+      width: 120px !important;
+    }
+  }
+}
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .cars {
+    width: 40%;
+  }
+}
 
 @media (min-width: 200px) and (max-width: 800px) {
   .h3 {
@@ -44,6 +65,7 @@
     display: none !important;
   }
   .cars {
+    width: 100%;
     margin: 40px auto !important;
   }
   .info {

@@ -20,6 +20,15 @@ aside {
 
 // reposive
 
+@media (max-width: 900px) {
+  .h2 {
+    font-size: 25px !important;
+  }
+  p {
+    font-size: 12px !important;
+  }
+}
+
 @media (min-width: 200px) and (max-width: 800px) {
   aside {
     position: relative;
@@ -31,12 +40,12 @@ aside {
       bottom: 0;
       margin: 0 auto !important;
       .h2 {
-        font: normal normal 22px/20px "Poppins" !important;
+        font: normal normal 14px/20px "Poppins" !important;
         color: $mainColor;
         text-transform: uppercase;
       }
       p {
-        font: normal normal normal 16px/16px "Poppins" !important;
+        font: normal normal normal 12px/16px "Poppins" !important;
         color: $mainColor;
       }
     }
