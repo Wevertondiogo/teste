@@ -129,7 +129,7 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (min-width: 1300px) and (max-width: 1400px) {
   .form-group {
     top: 20% !important;
   }
